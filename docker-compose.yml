@@ -3,8 +3,9 @@ version: '3'
 services:
   app:
     build: .
-    container_name: chatgpt-demo
-    image: chatgpt-demo
+    container_name: chatgpt
+    image: chatgpt
+    restart: always
     ports:
       - 3000:3000
     volumes:
